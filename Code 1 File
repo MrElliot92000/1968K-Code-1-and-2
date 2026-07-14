@@ -1,0 +1,461 @@
+campaignTrail_temp.election_json = [
+    {
+        "model": "campaign_trail.election",
+        "pk": 4,
+        "fields": {
+            "year": 1968,
+            "summary": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <title>1968 Alternate Election</title>\n</head>\n<body>\n  <p><b>The Year is 1964</b>, Henry Cabot Lodge has won against Orval Faubus in an unprecedented landslide. \n  Things looked hopeful, the economy was high in the sky, America was dominant on the globe and people were for the most part happy with the status quo.</p>\n\n  <p>4 Years later, America is a very different place, racial tensions are high, the economy is worsening on a rapid pace and the streets are filled with disorder and violence.</p>\n\n  <p>Not only that the War in Vietnam is killing thousands and thousands of American boys every single day.\n  All of these factors combined have turned Lodge from a decently liked President to the most Unpopular president of the 60s, with many expecting Lodge to lose '68.....</p>\n\n  <p>● Enter Stage Left is George Stanley McGovern, McGovern is a staunch Anti-War Progressive who won the primaries in an upset against people like Hubert Humphrey, Edward Muskie and Eugene McCarthy. Now McGovern faces the hard task of unifying the Democratic Party after the divisive primaries while also rallying his base.</p>\n\n  <p>● Centre Stage is incumbent President: Henry Cabot Lodge Jr. Lodge starts heavily behind in the General Election and must fight tooth and nail doing everything he can to prevent McGovern from winning. Whether that be ending the Vietnam War, mudslinging or trying to defend his record, he must do it.</p>\n\n  <p>● Enter Stage Right is former Governor of Alabama, Segregationist and Democrat: George Corley Wallace. Wallace must try and deadlock the electoral college and hopefully fulfill his goal of \"Segregation Today, Segregation Tommorow, Segregation Forever!\"</p>\n\n  <p>The Main Issues of the Election will be the Economy, The Vietnam War, Lodge's Approvals and Law and Order.</p>\n</body>\n</html>\n",
+            "image_url": "https://i.imgur.com/XIlgb8Q.png",
+            "winning_electoral_vote_number": 270,
+            "advisor_url": "https://www.jetsimon.com/public/static/images/haldeman-mondale.jpg",
+            "recommended_reading": "NOTHING, WHY ARE YOU LOOKING HERE",
+            "has_visits": 1,
+            "no_electoral_majority_image": "https://www.jetsimon.com/public/static/images/1968-no-majority.jpg",
+            "creator": "Dan Bryan",
+            "display_year": "1968K",
+            "recommended_reading_enabled": true,
+            "site_description": " The Year is 1964, Henry Cabot Lodge has won against Orval Faubus in an unprecedented landslide, things looked hopeful, the economy was high in the sky, America was dominant on the globe and people are for the most part happy with the status quo\n\n4 Years later, America is a very different place, racial tensions are high, the economy is worsening on a rapid pace and the streets are filled with disorder and violence.\n \nNot only that the War in Vietnam is killing thousands and thousands of American boys every single day.\nAll of these factors combined have turned Lodge from a decently liked President to the most Unpopular president of the 60s, with many expecting Lodge to lose '68..... \n\n\n\n● Enter Stage Left is George Stanley McGovern, McGovern is a staunch Anti-War Progressive who won the primaries in an upset against people like Hubert Humphrey, Edward Muskie and Eugene McCarthy. Now McGovern faces the hard task of unifying the Democratic Party after the divisive primaries while also rallying his base.\n\n●  Centre Stage is incumbent President: Henry Cabot Lodge Jr. Lodge starts heavily behind in the General Election and must fight tooth and nail doing everything he can to prevent McGovern from winning. Whether that be ending the Vietnam War, mudslinging or trying to defend his record, he must do it.\n\n●  Enter Stage Right is former Governor of Alabama, Segregationist and Democrat: George Corley Wallace. Wallace must try and deadlock the electoral college and hopefully fulfill his goal of \"Segregation Today, Segregation Tomorrow, Segregation Forever!\"\n\nThe Main Issues of the Election will be the Economy, The Vietnam War, Lodge's Approvals and Law and Order"
+        }
+    }
+];
+
+campaignTrail_temp.temp_election_list = [
+    {
+        "id": 4,
+        "year": 1968,
+        "is_premium": 0,
+        "display_year": "1968K"
+    }
+];
+
+RecReading = true;
+
+campaignTrail_temp.credits = "MrElliot92000";
+
+campaignTrail_temp.global_parameter_json = [
+    {
+        "model": "campaign_trail.global_parameter",
+        "pk": 1,
+        "fields": {
+            "vote_variable": 1.125,
+            "max_swing": 0.12,
+            "start_point": 0.94,
+            "candidate_issue_weight": 10,
+            "running_mate_issue_weight": 3,
+            "issue_stance_1_max": -0.71,
+            "issue_stance_2_max": -0.3,
+            "issue_stance_3_max": -0.125,
+            "issue_stance_4_max": 0.125,
+            "issue_stance_5_max": 0.3,
+            "issue_stance_6_max": 0.71,
+            "global_variance": 0.01,
+            "state_variance": 0.005,
+            "question_count": 25,
+            "default_map_color_hex": "#C9C9C9",
+            "no_state_map_color_hex": "#999999"
+        }
+    }
+];
+
+campaignTrail_temp.candidate_json = [
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 55,
+        "fields": {
+            "first_name": "Carl Edward",
+            "last_name": "Sanders Sr",
+            "election": 4,
+            "party": "The Democratic Party",
+            "state": "Georgia",
+            "priority": 29,
+            "description": "n/a",
+            "color_hex": "#42e9ff",
+            "secondary_color_hex": "#FFA0A0",
+            "is_active": 0,
+            "image_url": "https://i.imgur.com/GPfu4CV.png",
+            "electoral_victory_message": "n/a",
+            "electoral_loss_message": "n/a",
+            "no_electoral_majority_message": "n/a",
+            "description_as_running_mate": "Carl Sanders is the perfect choice for the Vice Presidential slot and would fill the role Johnson did in 1960. Carl Sanders is a Moderate Democrat and the former Governor of the state of Georgia.\nSanders would also help expand your base past Northern Liberals and Moderates and bring in racial moderates and unite the Party's Northern and Southern wings. However he wouldn't exactly help you in Georgia as the state is more or less projected to be solid and he also has a very low name recognition which may be a bit of a problem for you.",
+            "candidate_score": 0,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 56,
+        "fields": {
+            "first_name": "Nelson",
+            "last_name": "Rockefeller",
+            "election": 4,
+            "party": "Republican",
+            "state": "New York",
+            "priority": 30,
+            "description": "n/a",
+            "color_hex": "#FF0000",
+            "secondary_color_hex": "#FFA0A0",
+            "is_active": 0,
+            "image_url": "https://www.jetsimon.com/public/static/images/nelson-rockefeller-1968.jpg",
+            "electoral_victory_message": "n/a",
+            "electoral_loss_message": "n/a",
+            "no_electoral_majority_message": "n/a",
+            "description_as_running_mate": "<p>Rockefeller and Nixon competed vigorously for the 1968 nomination. Rockefeller's moderate reputation and New York location could both be assets in the campaign.</p><p>By selecting Rockefeller, Nixon would dampen his chances against Wallace in the South and would need to run well against Humphrey in the big northern cities to win the election.</p>",
+            "candidate_score": 0,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 44,
+        "fields": {
+            "first_name": "Ronald",
+            "last_name": "Reagan",
+            "election": 4,
+            "party": "Republican",
+            "state": "California",
+            "priority": 31,
+            "description": "n/a",
+            "color_hex": "#FF0000",
+            "secondary_color_hex": "#FFA0A0",
+            "is_active": 0,
+            "image_url": "https://www.jetsimon.com/public/static/images/ronald-reagan-1968.jpg",
+            "electoral_victory_message": "n/a",
+            "electoral_loss_message": "n/a",
+            "no_electoral_majority_message": "n/a",
+            "description_as_running_mate": "<p>The standard-bearer of the conservative Republicans, Reagan can virtually assure a victory in California, where he presides as Governor. He has taken a firm stand against protests and disorder in that state and will reinforce Nixon's credibility as a champion of good order.</p><p>However, Reagan will not help Nixon very much in the competitive Northeast and Midwest states where he must challenge Humphrey.</p>",
+            "candidate_score": 0,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 57,
+        "fields": {
+            "first_name": "George",
+            "last_name": "Romney",
+            "election": 4,
+            "party": "Republican",
+            "state": "Michigan",
+            "priority": 32,
+            "description": "n/a",
+            "color_hex": "#FF0000",
+            "secondary_color_hex": "#FFA0A0",
+            "is_active": 0,
+            "image_url": "https://www.jetsimon.com/public/static/images/george-romney-1968.jpg",
+            "electoral_victory_message": "n/a",
+            "electoral_loss_message": "n/a",
+            "no_electoral_majority_message": "n/a",
+            "description_as_running_mate": "<p>A moderate Republican from Michigan and another failed challenger to Nixon for the nomination, Romney can help immensely in the Midwest.</p><p>Romney is an avowed peace candidate however, which could hurt Nixon in the South. He will mainly help Nixon compete against Humphrey -- not against Wallace.</p>",
+            "candidate_score": 0,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 58,
+        "fields": {
+            "first_name": "Edmund",
+            "last_name": "Muskie",
+            "election": 4,
+            "party": "Democrat",
+            "state": "Maine",
+            "priority": 33,
+            "description": "n/a",
+            "color_hex": "#0000FF",
+            "secondary_color_hex": "#90C0FF",
+            "is_active": 0,
+            "image_url": "https://www.jetsimon.com/public/static/images/edmund-muskie-1968.jpg",
+            "electoral_victory_message": "n/a",
+            "electoral_loss_message": "n/a",
+            "no_electoral_majority_message": "n/a",
+            "description_as_running_mate": "<p>Muskie is a Senator from Maine, and although he has a low national profile he could help Humphrey solidify his base and carry the Northeastern states.</p><p>By going with Muskie, Humphrey would probably be writing off most of the South and also would be giving Nixon an opening among moderate voters.</p>",
+            "candidate_score": 0,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 59,
+        "fields": {
+            "first_name": "Fred",
+            "last_name": "Harris",
+            "election": 4,
+            "party": "Democrat",
+            "state": "Oklahoma",
+            "priority": 34,
+            "description": "n/a",
+            "color_hex": "#0000FF",
+            "secondary_color_hex": "#90C0FF",
+            "is_active": 0,
+            "image_url": "https://www.jetsimon.com/public/static/images/fred-harris-1968.jpg",
+            "electoral_victory_message": "n/a",
+            "electoral_loss_message": "n/a",
+            "no_electoral_majority_message": "n/a",
+            "description_as_running_mate": "<p>A Democrat from Oklahoma, Harris could help his party make a play for some of the Southern states without alienating its liberal wing.</p><p>Harris will add very little to the campaign if he fails to deliver some states in the South, and his young age (37 years) could be alarming to some voters.</p>",
+            "candidate_score": 0,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 60,
+        "fields": {
+            "first_name": "John",
+            "last_name": "Connally",
+            "election": 4,
+            "party": "Democrat",
+            "state": "Texas",
+            "priority": 35,
+            "description": "n/a",
+            "color_hex": "#0000FF",
+            "secondary_color_hex": "#90C0FF",
+            "is_active": 0,
+            "image_url": "https://www.jetsimon.com/public/static/images/john-connally-1968.jpg",
+            "electoral_victory_message": "n/a",
+            "electoral_loss_message": "n/a",
+            "no_electoral_majority_message": "n/a",
+            "description_as_running_mate": "<p>Connally was and is the Governor of Texas who was infamously wounded in the Kennedy Assassination. He would reinforce a moderate image, help deliver Texas to the ticket, and dampen the appeal of Wallace elsewhere to all but the most hard-line segregationists.</p><p>However the anti-war, liberal wing of the party will surely recoil at this selection.</p>",
+            "candidate_score": 0,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 61,
+        "fields": {
+            "first_name": "Ted",
+            "last_name": "Kennedy",
+            "election": 4,
+            "party": "Democrat",
+            "state": "Massachusetts",
+            "priority": 36,
+            "description": "n/a",
+            "color_hex": "#0000FF",
+            "secondary_color_hex": "#90C0FF",
+            "is_active": 0,
+            "image_url": "https://www.jetsimon.com/public/static/images/ted-kennedy-1968.jpg",
+            "electoral_victory_message": "n/a",
+            "electoral_loss_message": "n/a",
+            "no_electoral_majority_message": "n/a",
+            "description_as_running_mate": "<p>Younger brother to John and Robert Kennedy and a staunch liberal, Ted Kennedy would be a choice if Humphrey wished to reconcile with the liberal and anti-war wing of the party.</p><p>Kennedy will not accept the nomination, however, unless Humphrey repudiates the hawkish policies of President Johnson. This could cause problems with moderates and more importantly with the Democratic establishment.</p>",
+            "candidate_score": 0,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 62,
+        "fields": {
+            "first_name": "Curtis",
+            "last_name": "LeMay",
+            "election": 4,
+            "party": "Republican",
+            "state": "Ohio",
+            "priority": 37,
+            "description": "n/a",
+            "color_hex": "#FF0000",
+            "secondary_color_hex": "#FFA0A0",
+            "is_active": 0,
+            "image_url": "https://www.jetsimon.com/public/static/images/curtis-lemay-1968.jpg",
+            "electoral_victory_message": "n/a",
+            "electoral_loss_message": "n/a",
+            "no_electoral_majority_message": "n/a",
+            "description_as_running_mate": "<p>A famous (some say infamous) General in the Army for many years, LeMay is dismayed by the prospect of Richard Nixon accepting nuclear parity with the Soviet Union. He also is drawn to Wallace's message of social order.</p><p>LeMay is prone to make off the cuff remarks about the use of nuclear weapons, however, which could lead to concerns about Wallace's foreign policy vision.</p>",
+            "candidate_score": 0,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 63,
+        "fields": {
+            "first_name": "Happy",
+            "last_name": "Chandler",
+            "election": 4,
+            "party": "Democrat",
+            "state": "Kentucky",
+            "priority": 38,
+            "description": "n/a",
+            "color_hex": "#0000FF",
+            "secondary_color_hex": "#90C0FF",
+            "is_active": 0,
+            "image_url": "https://www.jetsimon.com/public/static/images/happy-chandler-1968.jpg",
+            "electoral_victory_message": "n/a",
+            "electoral_loss_message": "n/a",
+            "no_electoral_majority_message": "n/a",
+            "description_as_running_mate": "<p>A Democratic Senator from Kentucky and former Commissioner of Major League Baseball, Chandler would give Wallace's outsider campaign some credibility.</p><p>As a conservative Democrat, Chandler supports the calls for law and order and fiscal conservatism. However, he will not stand as Wallace's running mate unless he softens his rhetoric on segregation, which in turn could alienate other Southern states.</p>",
+            "candidate_score": 0,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 64,
+        "fields": {
+            "first_name": "Strom",
+            "last_name": "Thurmond",
+            "election": 4,
+            "party": "Republican",
+            "state": "South Carolina",
+            "priority": 39,
+            "description": "n/a",
+            "color_hex": "#FF0000",
+            "secondary_color_hex": "#FFA0A0",
+            "is_active": 0,
+            "image_url": "https://www.jetsimon.com/public/static/images/strom-thurmond-1968.jpg",
+            "electoral_victory_message": "n/a",
+            "electoral_loss_message": "n/a",
+            "no_electoral_majority_message": "n/a",
+            "description_as_running_mate": "<p>The most mainline Southerner among Wallace's options, Thurmond did well in his own right when running in 1948.</p><p>Thurmond's presence could help tilt the Carolinas in Wallace's direction, but it will take every ounce of Wallace's persuasive acumen to get Thurmond to agree to run.</p>",
+            "candidate_score": 0,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 65,
+        "fields": {
+            "first_name": "John Fitzgerald",
+            "last_name": "Kennedy",
+            "election": 4,
+            "party": "The Democratic Party",
+            "state": "Massachusetts ",
+            "priority": 1,
+            "description": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <title>1968 Democratic Convention Scenario</title>\n</head>\n<body>\n  <p>John Fitzpatrick Kennedy shouldn't be the Democratic nominee, it's utterly mind boggling how he became so. Since Kennedy's respectable loss against Nixon, many thought his presidential career was over and since that point, that seemed to be true.</p>\n <p>Of course this was until the Chicago convention. The frontrunner for the Democratic nomination, McGovern, was heavily unpopular among the Party bosses. Their favored candidate, Johnson, had performed poorly in comparison to Humphrey who was in second place.</p>\n<p>Eventually balloting went on, and when the 1st ballot happened, McGovern couldn't get a majority. This repeated in the 2nd and 3rd. Johnson attempted to get the establishment candidates of Humphrey and Muskie to endorse him, but they refused. By the 5th ballot the establishment abandoned Johnson and endorsed Humphrey. Muskie however would not endorse Humphrey, causing the convention to remain deadlocked by the 7th and 8th ballot.</p>\n\n  <p>Eventually McCarthy endorsed McGovern, but his paltry sum of delegates could not drive McGovern to a majority. By the 15th ballot, compromise candidates were discussed: Sanders, Hoff, Muskie? Eventually they decided on John F. Kennedy to carry the burden of uniting the Party. Let's hope the decision was right.</p>\n</body>\n</html>",
+            "color_hex": "#0c1197",
+            "secondary_color_hex": null,
+            "is_active": 1,
+            "image_url": "https://i.imgur.com/OLKCCYL.png",
+            "electoral_victory_message": "Winner!",
+            "electoral_loss_message": "Loser!",
+            "no_electoral_majority_message": "Majority?",
+            "description_as_running_mate": null,
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    }
+];
+
+campaignTrail_temp.running_mate_json = [
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 1,
+        "fields": {
+            "candidate": 65,
+            "running_mate": 55
+        }
+    }
+];
+
+campaignTrail_temp.opponents_default_json = [
+    {
+        "election": 4,
+        "candidates": [
+            65
+        ]
+    }
+];
+
+campaignTrail_temp.opponents_weighted_json = [
+    {
+        "election": 4,
+        "candidates": [
+            65
+        ]
+    }
+];
+
+campaignTrail_temp.modBoxTheme = {
+    "header_color": "#970707",
+    "header_text_color": "#ffffff",
+    "description_background_color": "#ffffff",
+    "description_text_color": "#0051ff",
+    "main_color": "#b8b8b8",
+    "secondary_color": "#001c42",
+    "ui_text_color": "#ffffff",
+    "site_title": "",
+    "site_image_url": ""
+};
+
+jet_data = {
+    "headerColor": "#002570",
+    "headerTextColor": "#ffffff",
+    "windowColor": "#ababab",
+    "containerColor": "#624141",
+    "innerWindowColor": "#878787",
+    "innerWindowTextColor": "#000000",
+    "descriptionWindowColor": "#f8f8f8",
+    "descriptionWindowTextColor": "#000000",
+    "startButtonColor": "#252e6f",
+    "bannerImageUrl": "https://i.imgur.com/Kg24fch.png",
+    "backgroundImageUrl": "https://i.imgur.com/HO5beGz.jpeg",
+    "gameTitle": "THE ELECTION OF '68",
+    "customQuote": "\"What If History Turned Out Differently\"",
+    "quoteTextColor": "#ffffff",
+    "endingTextColor": "#000000",
+    "modBoxTheme": {
+        "header_color": "#970707",
+        "header_text_color": "#ffffff",
+        "description_background_color": "#ffffff",
+        "description_text_color": "#0051ff",
+        "main_color": "#b8b8b8",
+        "secondary_color": "#001c42",
+        "ui_text_color": "#ffffff",
+        "site_title": "",
+        "site_image_url": ""
+    }
+};
+
+//#startcode
+function applyTheme(theme) {
+    const gameHeader = document.querySelector(".game_header");
+    if (gameHeader && theme.coloring_title) {
+        gameHeader.style.backgroundColor = theme.coloring_title;
+    }
+
+    const gameWindow = document.getElementById("game_window");
+    if (gameWindow && theme.coloring_window) {
+        gameWindow.style.backgroundColor = theme.coloring_window;
+    }
+
+    const container = document.querySelector(".container");
+    if (container && theme.coloring_container) {
+        container.style.backgroundColor = theme.coloring_container;
+    }
+
+    const headerImg = document.getElementById("header");
+    if (headerImg && theme.header_image) {
+        headerImg.src = theme.header_image;
+    }
+
+    if (theme.body_background) {
+        document.body.style.backgroundImage = `url("${theme.body_background}")`;
+        document.body.style.backgroundSize = "cover";
+        document.body.style.backgroundAttachment = "fixed";
+    }
+
+    const style = document.createElement("style");
+    style.textContent = `
+      #results_container { color: #000000; }
+      #wittyquote { color: #ffffff; }
+      .game_header h2 { color: #ffffff; }
+      .inner_window_w_desc { background-color: #878787 !important; color: #000000; }
+      .inner_window_front, .person_description_window, .election_description_window, .description_window_small { background-color: #f8f8f8 !important; color: #000000; }
+      .campaign_trail_start_emphasis { background-color: #252e6f !important; }
+    `;
+    document.head.appendChild(style);
+}
+
+corrr = '\n              <h2>THE ELECTION OF '68</h2><font id="wittyquote" size="4"><em>"What If History Turned Out Differently"</em></font>\n            ';
+
+const theme = nct_stuff.themes[nct_stuff.selectedTheme];
+
+// define / override theme values
+theme.coloring_title     = "#002570";
+theme.coloring_window    = "#ababab";
+theme.coloring_container = "#624141";
+theme.header_image = "https://i.imgur.com/Kg24fch.png";
+theme.body_background = "https://i.imgur.com/HO5beGz.jpeg";
+
+applyTheme(theme);
+//#endcode
