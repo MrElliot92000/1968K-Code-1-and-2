@@ -76,7 +76,7 @@ campaignTrail_temp.candidate_json = [
             "electoral_victory_message": "n/a",
             "electoral_loss_message": "n/a",
             "no_electoral_majority_message": "n/a",
-            "description_as_running_mate": "Carl Sanders is the perfect choice for the Vice Presidential slot and would fill the role Johnson did in 1960. Carl Sanders is a Moderate Democrat and the former Governor of the state of Georgia.\nSanders would also help expand your base past Northern Liberals and Moderates and bring in racial moderates and unite the Party's Northern and Southern wings. However he wouldn't exactly help you in Georgia as the state is more or less projected to be solid and he also has a very low name recognition which may be a bit of a problem for you.",
+            "description_as_running_mate": "Carl Sanders is the perfect choice for the Vice Presidential slot and would fill the role Johnson did in 1960. Carl Sanders is a Moderate Democrat and the former Governor of the state of Georgia.\nSanders would also help expand your base past Northern Liberals and Moderates and bring in racial moderates and unite the Party's Northern and Southern wings. However he wouldn't exactly help you in Georgia as the state is more or less projected to be solid for Wallace and he also has a very low name recognition which may be a bit of a problem for you.",
             "candidate_score": 0,
             "running_mate": true
         }
@@ -326,9 +326,9 @@ campaignTrail_temp.candidate_json = [
             "secondary_color_hex": null,
             "is_active": 1,
             "image_url": "https://i.imgur.com/OLKCCYL.png",
-            "electoral_victory_message": "Winner!",
-            "electoral_loss_message": "Loser!",
-            "no_electoral_majority_message": "Majority?",
+            "electoral_victory_message": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <title>1968 Election Victory</title>\n  <style>\n    .big-letter {\n      font-size: 2em;\n      font-weight: bold;\n    }\n  </style>\n</head>\n<body>\n  <p><span class=\"big-letter\">C</span>ONGRATULATIONS, YOU WON THE 1968 ELECTION</p>\n\n  <p>This was largely the expected result of the 1968 election. With the bad economic circumstances, the War in Vietnam, and chaos on the streets, your win was inevitable.</p>\n\n  <p>That's not to say the race was easy. There were many points where you could have lost, but in the end you prevailed over the Republicans and finally you've brought Camelot to the White House.</p>\n</body>\n</html>\n",
+            "electoral_loss_message": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <title>1968 Election Loss</title>\n  <style>\n    .big-letter {\n      font-size: 2em;\n      font-weight: bold;\n    }\n  </style>\n</head>\n<body>\n  <p><span class=\"big-letter\">S</span>ORRY, YOU LOST THE 1968 ELECTION</p>\n\n  <p>This was unexpected to say the least. It looks like you couldn't overcome the internal divisions of the Democratic Party and you let them tear the Party and your campaign apart.</p>\n\n  <p>After this result it seems like your Presidential career has ended for good. Maybe you can return to the Senate, perhaps you can retire — that's up to you, John.</p>\n</body>\n</html>\n",
+            "no_electoral_majority_message": "No Electoral Majority",
             "description_as_running_mate": null,
             "candidate_score": 1,
             "running_mate": false
@@ -459,3 +459,5 @@ theme.body_background = "https://i.imgur.com/HO5beGz.jpeg";
 
 applyTheme(theme);
 //#endcode
+
+
