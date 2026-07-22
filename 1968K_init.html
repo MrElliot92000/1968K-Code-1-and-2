@@ -498,12 +498,17 @@ function applyTheme(theme) {
 
 corrr = '\n <h2>THE ELECTION OF \'68</h2><font id="wittyquote" size="4"><em>"What If History Turned Out Differently"</em></font>\n ';
 
-// define / override theme values
-theme.coloring_title     = "#002570";
-theme.coloring_window    = "#ababab";
-theme.coloring_container = "#624141";
-theme.header_image = "https://i.imgur.com/Kg24fch.png";
-theme.body_background = "https://i.imgur.com/HO5beGz.jpeg";
+ct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#002570";
+
+nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#ababab";
+$(".container")[0].style.backgroundColor = "#e9e7e3";
+document.getElementById("header").src = "https://i.imgur.com/Kg24fch.png";
+
+document.body.background = "https://i.imgur.com/HO5beGz.jpeg";
+
+document.body.style.backgroundRepeat = "no-repeat";
+
+document.body.style.backgroundSize = "cover";
 
 applyTheme(theme);
 //#endcode
