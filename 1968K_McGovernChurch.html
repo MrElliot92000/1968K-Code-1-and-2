@@ -1,9 +1,9 @@
-campaignTrail_temp.questions_json = [
+ campaignTrail_temp.questions_json = [
     {
         "model": "campaign_trail.question",
-        "pk": 8779,
+        "pk": 8931,
         "fields": {
-            "description": "It's Wednesday, September 2, 1968, it's late at night about 12:00. You, John Kennedy have been talked about as potential compromise candidate between Humphrey and McGovern and Mayor Daley. Eventually you are quietly ushered into Mayor Daley's hotel suite at the Conrad Hilton, his intentions are clear, he wants you to be the nominee."
+            "description": "It's Wednesday, September 4, 1968, late at night, around 2:00 AM. An Aide enters the room and informs you that the Party Bosses have been engaging in some backroom activity to draft none other than John F. Kennedy to block you from the nomination."
         }
     },
     {
@@ -74,13 +74,6 @@ campaignTrail_temp.questions_json = [
         "pk": 8930,
         "fields": {
             "description": "With the War In Vietnam seeming never-ending, Chaos growing on the streets, the Economy slowly worsening and Ideological Polarization growing you need a message, a message that your campaign will primarily focus on the course of the campaign. What will it be? "
-        }
-    },
-    {
-        "model": "campaign_trail.question",
-        "pk": 8931,
-        "fields": {
-            "description": "put description here"
         }
     },
     {
@@ -173,18 +166,17 @@ campaignTrail_temp.questions_json = [
         "fields": {
             "description": "In the Final Weeks of the Campaign where would you like to concentrate your campaigning "
         }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 9139,
+        "fields": {
+            "description": "put description here"
+        }
     }
 ];
 
 campaignTrail_temp.answers_json = [
-    {
-        "model": "campaign_trail.answer",
-        "pk": 8780,
-        "fields": {
-            "question": 8779,
-            "description": "After a long back and forth talk about the concessions he wants, you accept being the compromise candidate knowing full well that the longer this convention goes on the more divided the party will be for the general election."
-        }
-    },
     {
         "model": "campaign_trail.answer",
         "pk": 8783,
@@ -478,7 +470,7 @@ campaignTrail_temp.answers_json = [
         "pk": 9117,
         "fields": {
             "question": 8931,
-            "description": "New answer option"
+            "description": "There must be something we can do? Can't we rally some of the more liberal Humphrey or Muskie Delegates to us. I mean this can't be all for nothing."
         }
     },
     {
@@ -8066,15 +8058,6 @@ campaignTrail_temp.answer_score_state_json = [
 campaignTrail_temp.answer_feedback_json = [
     {
         "model": "campaign_trail.answer_feedback",
-        "pk": 8781,
-        "fields": {
-            "answer": 8780,
-            "candidate": 65,
-            "answer_feedback": "You close the deal by shaking Daley's hand."
-        }
-    },
-    {
-        "model": "campaign_trail.answer_feedback",
         "pk": 8784,
         "fields": {
             "answer": 8783,
@@ -8369,13 +8352,22 @@ campaignTrail_temp.answer_feedback_json = [
             "candidate": 65,
             "answer_feedback": "Good News, George Wallace endorsed You. Bad News, Polling shows that you will carry the Deep South and nothing else."
         }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 9138,
+        "fields": {
+            "answer": 9117,
+            "candidate": 65,
+            "answer_feedback": "Unfortunately, there is nothing you can do."
+        }
     }
 ];
 
-campaignTrail_temp.candidate_image_url = "https://i.imgur.com/S5qKTo8.png";
-campaignTrail_temp.running_mate_image_url = "https://i.imgur.com/z9Ka4Bf.png";
-campaignTrail_temp.candidate_last_name = "Kennedy";
-campaignTrail_temp.running_mate_last_name = "Sanders";
+campaignTrail_temp.candidate_image_url = "https://i.imgur.com/2ZP107J.png";
+campaignTrail_temp.running_mate_image_url = "https://i.imgur.com/44tW21J.png";
+campaignTrail_temp.candidate_last_name = "McGovern";
+campaignTrail_temp.running_mate_last_name = "For President";
 
 //#startcode
 campaignTrail_temp.cyoa = true;
@@ -8475,6 +8467,54 @@ function answerSwapper(pk1, pk2, takeEffects = true) {
         });
     }
 }
+
+// Candidate switching wahoo - from Moonbeam
+function setCandidateIdentity(candidatePk, options) {
+    const cand = campaignTrail_temp.candidate_json.find(p => Number(p.pk) === Number(candidatePk));
+    if (cand?.fields) {
+        if (options.first !== undefined) cand.fields.first_name = options.first;
+        if (options.last !== undefined) cand.fields.last_name = options.last;
+        if (options.color !== undefined) cand.fields.color_hex = options.color;
+    }
+
+    if (Number(campaignTrail_temp.candidate_id) === Number(candidatePk)) {
+        if (options.last !== undefined) campaignTrail_temp.candidate_last_name = options.last;
+        if (options.first !== undefined) campaignTrail_temp.candidate_first_name = options.first;
+    }
+
+    if (options.issueScores && campaignTrail_temp.candidate_issue_score_json) {
+        const updateScore = (issueId, score) => {
+            let targetScore = campaignTrail_temp.candidate_issue_score_json.find(
+                item => Number(item.fields.candidate) === Number(candidatePk) &&
+                        Number(item.fields.issue) === Number(issueId)
+            );
+
+            if (targetScore?.fields) {
+                targetScore.fields.issue_score = Number(score);
+            } else {
+                campaignTrail_temp.candidate_issue_score_json.push({
+                    model: "campaign_trail.candidate_issue_score",
+                    fields: {
+                        candidate: Number(candidatePk),
+                        issue: Number(issueId),
+                        issue_score: Number(score)
+                    }
+                });
+            }
+        };
+
+        if (!Array.isArray(options.issueScores) && typeof options.issueScores === 'object') {
+            Object.entries(options.issueScores).forEach(([issueId, score]) => {
+                updateScore(issueId, score);
+            });
+        }
+        else if (Array.isArray(options.issueScores)) {
+            options.issueScores.forEach(({ issue, score }) => {
+                updateScore(issue, score);
+            });
+        }
+    }
+}
 cyoAdventure = function (a) {
     const ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length - 1];
     e.noCounter = campaignTrail_temp.player_answers.length;
@@ -8501,10 +8541,10 @@ campaignTrail_temp.jet_data = [{
     },
     "player_candidate": 65,
     "banner_data": {
-        "canName": "Kennedy",
-        "canImage": "https://i.imgur.com/S5qKTo8.png",
-        "runName": "Sanders",
-        "runImage": "https://i.imgur.com/z9Ka4Bf.png"
+        "canName": "McGovern",
+        "canImage": "https://i.imgur.com/2ZP107J.png",
+        "runName": "For President",
+        "runImage": "https://i.imgur.com/44tW21J.png"
     },
     "banner_enabled": true,
     "cyoa_enabled": true,
@@ -8512,8 +8552,15 @@ campaignTrail_temp.jet_data = [{
         "1784166386037": {
             "answer": 8869,
             "question": 8944,
-            "id": 1784166386037,
-            "conditionOperator": "AND"
+            "id": 1784166386037
+        }
+    },
+    "cyoa_candidate_switches": {
+        "1789803030174": {
+            "id": 1789803030174,
+            "first_name": "",
+            "last_name": "",
+            "color_hex": ""
         }
     }
 }
